@@ -1,0 +1,47 @@
+<template name="main">
+    <nav class="red lighten-1">
+                     <a href="#!" class="brand-logo center">Counter</a>
+                     
+                     
+                    <ul id="slide-out" class="side-nav">
+                        <li><a href="{{pathFor route="new"}}">New Patient</a></li>
+                        <li><a href="#!">Revisit</a></li>
+                        <li><a href="#!">Records</a></li>
+                        <li><a href="#!">Problems</a></li>
+                        <li><a href="#!">Log  Out</a></li>
+
+                   </ul>
+                        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+    </nav>
+
+          
+          {{> yield}}
+
+
+                      <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+                        <a class="btn-floating btn-large red">
+                          <i class="large mdi-navigation-menu"></i>
+                        </a>
+                        <ul>
+                          <li><a class="btn-floating blue modal-trigger" href="#modal1"><i class="mdi-communication-live-help"></i></a></li>
+                          <li><a class="btn-floating red tooltipped" data-position="top" data-delay="50" data-tooltip="Add A New Patient"><i class="mdi-social-group-add"></i></a></li>
+                          <li><a class="btn-floating yellow darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Register a revisiting Patient"><i class="mdi-social-group"></i></a></li>
+                          <li><a class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Check Out the Previous Records"><i class="mdi-action-book"></i></a></li>
+                          <li><a class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Search"><i class="mdi-action-search"></i></a></li>
+                        </ul>
+                      </div>
+                      
+                      
+                      
+                                                       <!-- Modal Structure -->
+                                  <div id="modal1" class="modal modal-fixed-footer">
+                                    <div class="modal-content">
+                                      <h4>The Round Buttons</h4>
+                                      <p>They are a great shortcut to the commonly used commands</p>
+                                      <p>The Button Descriptions are found when you hover over the icons</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                                    </div>
+                                  </div>
+</template>

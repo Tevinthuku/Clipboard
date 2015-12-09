@@ -1,0 +1,80 @@
+<template name="new">
+   <div class="title">
+       <h4>A New Patient</h4>
+   </div> 
+   <!--The form to fill in-->
+   
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                          <!--The firstName-->
+                        <div class="input-field col s12 m6">
+                              <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">First Name</label>
+                        </div>
+                        
+                          <!--The MiddleName-->
+                        <div class="input-field col s12 m6">
+                              <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">MiddleName</label>
+                        </div>
+                        
+                         <!--The LastName-->
+                        <div class="input-field col s12 m6">
+                              <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">Last Name</label>
+                        </div>
+                        
+                         <!--The Telephone-->
+                        <div class="input-field col s12 m6">
+                              <input id="icon_telephone" type="tel" class="validate">
+                          <label for="icon_telephone">Telephone</label>
+                        </div>
+                        
+                        <!--The Date Born-->
+                        
+                        <div class="col s12 m6">
+                             <label for="Icon_date">Date Born</label>
+                             <input type="date" class="datepicker" name="pickDate">
+                        </div>
+                        
+                        
+                        <!--The consultation dropdown-->
+                        
+                          <div class="input-field col s12 m6">
+                                <select id="consult">
+                                  <option value="" disabled selected>Choose your option</option>
+                                  <option value="1">Paid</option>
+                                  <option value="2">Not Paid</option>
+                
+                                </select>
+                                <label>Consultation Fee</label>
+                          </div>
+                        
+                        
+                        <!--The location-->
+                        <div class="input-field col s12">
+                              <input id="icon_location" type="text" class="validate">
+                          <label for="icon_telephone">Location</label>
+                        </div>
+                        
+                        <!--The current User-->
+                          <div class="input-field col s12">
+                            <select class="icons">
+                              <option value="" disabled selected>Choose your option</option>
+                              <option value="" data-icon="/doctor.jpg" class="circle">Current User</option>
+                              <option value="" data-icon="/new.jpg" class="circle">Switch User</option>
+                              
+                            </select>
+                            <label>Current User Check</label>
+                          </div>
+
+                         
+              </div>
+            </form>
+         </div>
+         <div class="submit hoverable">
+             <h5>Add Patient</h5>
+         </div>
+         
+</template>
